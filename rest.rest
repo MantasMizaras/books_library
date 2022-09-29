@@ -18,8 +18,8 @@ POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
-"email": "saulius@lrt.lt",
-"password": "secret123"
+"email": "admin@admin.lt",
+"password": "admin123"
 }
 
 ### BOOK get, add, update, delete
@@ -31,15 +31,15 @@ GET http://localhost:3000/api/book
 ###
 POST http://localhost:3000/api/book
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ3MTU2MCwiZXhwIjoxNjY0NDgyMzYwfQ.JNXWmCfYv6KF1OXWWVR_ljcHcjmkzfGOOV1P040dE94
 
 {
-  "title": "Controller",
-  "author": "Nezinomas informatikas",
-  "publisher": "Ctrl leidykla",
-  "publishing_date": "2022-09-01",
-  "genre": "Istorija",
-  "isbn": "54"
+  "title": "Admin",
+  "author": "IT expert",
+  "publisher": "Baltos lankos",
+  "publishing_date": "2012-10-15",
+  "genre": "IT",
+  "isbn": "255"
 }
 
 ###

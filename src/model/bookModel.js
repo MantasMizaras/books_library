@@ -22,10 +22,10 @@ function getBooks() {
 }
 
 // eslint-disable-next-line camelcase
-function createNewBook(title, author, publisher, publishing_date, genre, isbn) {
-  const sql = 'INSERT INTO books (title, author, publisher, publishing_date, genre, isbn) VALUES (?, ?, ?, ?, ?, ?)';
+function createNewBook(title, author, publisher, publishing_date, genre, isbn, admin_id) {
+  const sql = 'INSERT INTO books (title, author, publisher, publishing_date, genre, isbn, admin_id) VALUES (?, ?, ?, ?, ?, ?, ?)';
   // eslint-disable-next-line camelcase
-  return executeDb(sql, [title, author, publisher, publishing_date, genre, isbn]);
+  return executeDb(sql, [title, author, publisher, publishing_date, genre, isbn, admin_id]);
 }
 
 function updateBook(id, title, author, publisher, publishing_date, genre, isbn) {

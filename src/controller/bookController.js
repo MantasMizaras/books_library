@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable object-curly-newline */
 /* eslint-disable camelcase */
 const { getBooks, createNewBook, updateBook, deleteBook } = require('../model/bookModel');
@@ -13,8 +14,9 @@ const showBooks = async (req, res) => {
 
 const postNewBook = async (req, res) => {
   const { title, author, publisher, publishing_date, genre, isbn } = req.body;
+  const idFromToken = req.userId;
   try {
-    const result = await createNewBook(title, author, publisher, publishing_date, genre, isbn);
+    const result = await createNewBook(title, author, publisher, publishing_date, genre, isbn, idFromToken);
     if (result.affectedRows === 1) {
       res.status(201).json('Book succesfully added!');
       return;
