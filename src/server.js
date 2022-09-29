@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const { PORT } = require('./config');
 const userRoute = require('./routes/userRoutes');
+const bookRoute = require('./routes/bookRoutes');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/api', userRoute);
+app.use('/api', bookRoute);
 
 // 404 route
 app.all('*', (req, res) => {

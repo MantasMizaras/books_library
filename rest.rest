@@ -1,14 +1,16 @@
 ###
 http://localhost:3000/
 
+
+
 ###
 POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-"nickname": "admin",
-"email": "admin@admin.lt",
-"password": "admin123"
+"nickname": "krabas",
+"email": "labas@lrt.lt",
+"password": "secret123"
 }
 
 ###
@@ -19,3 +21,22 @@ Content-Type: application/json
 "email": "admin@admin.lt",
 "password": "admin123"
 }
+
+###
+GET http://localhost:3000/api/book
+
+
+###
+POST http://localhost:3000/api/book
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ1NTA4OSwiZXhwIjoxNjY0NDY1ODg5fQ.6A7Izd8UVrH1m_rS4FLR2-fJi41dNjLfQU9YxZonBb4
+
+{
+  "title": "Question from rest rest",
+  "author": "How it looks from rest rest today",
+  "publisher": "Briedis",
+  "publishing_date": "2015-08-05",
+  "genre": "IT",
+  "isbn": "124"
+}
+
