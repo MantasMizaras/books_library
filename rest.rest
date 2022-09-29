@@ -34,26 +34,26 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
 
 {
-  "title": "Question from rest rest number 4",
-  "author": "Kestutis Kestis",
-  "publisher": "Briedis",
-  "publishing_date": "2012-11-25",
-  "genre": "IT",
-  "isbn": "100"
+  "title": "Controller",
+  "author": "Nezinomas informatikas",
+  "publisher": "Ctrl leidykla",
+  "publishing_date": "2022-09-01",
+  "genre": "Istorija",
+  "isbn": "54"
 }
 
 ###
-PATCH http://localhost:3000/api/book/4
+PATCH http://localhost:3000/api/book/5
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
 
 {
-  "title": "Question from rest rest",
-  "author": "How it looks from rest rest today",
-  "publisher": "Briedis",
-  "publishing_date": "2015-08-05",
-  "genre": "IT",
-  "isbn": "114"
+  "title": "Controller moving",
+  "author": "Nezinomas informatikas",
+  "publisher": "Ctrl leidykla",
+  "publishing_date": "2022-09-01",
+  "genre": "Istorija",
+  "isbn": "54"
 }
 
 ###
