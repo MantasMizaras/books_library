@@ -1,27 +1,30 @@
 {
-  "name": "node_js_boilerplate",
+  "name": "node-15-cao-mysql-ir-nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js",
-    "lf": "eslint src --fix"
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MantasMizaras/NODE-15-cao-MySQL-ir-NODEJS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MantasMizaras/NODE-15-cao-MySQL-ir-NODEJS/issues"
+  },
+  "homepage": "https://github.com/MantasMizaras/NODE-15-cao-MySQL-ir-NODEJS#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "joi": "^17.6.0",
-    "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
-    "mysql2": "^2.3.3"
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^8.20.0",
+    "eslint": "^8.14.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
   }
