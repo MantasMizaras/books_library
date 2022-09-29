@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const mysql = require('mysql2/promise');
 const { dbConfig } = require('../config');
 
@@ -27,7 +28,19 @@ function createNewBook(title, author, publisher, publishing_date, genre, isbn) {
   return executeDb(sql, [title, author, publisher, publishing_date, genre, isbn]);
 }
 
+function updateBook(id, title, author, publisher, publishing_date, genre, isbn) {
+  const sql = `UPDATE books SET title = ? ,author = ? ,publisher = ? ,publishing_date = ? ,genre = ? ,isbn = ? WHERE id=${id.id} `;
+  return executeDb(sql, [title, author, publisher, publishing_date, genre, isbn]);
+}
+
+function deleteBook(id) {
+  const sql = `DELETE FROM books WHERE id=${id.id}`;
+  return executeDb(sql, [id]);
+}
+
 module.exports = {
   getBooks,
   createNewBook,
+  updateBook,
+  deleteBook,
 };

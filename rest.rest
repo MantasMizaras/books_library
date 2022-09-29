@@ -1,7 +1,7 @@
 ###
 http://localhost:3000/
 
-
+### REG / LOG
 
 ###
 POST http://localhost:3000/api/register
@@ -22,6 +22,8 @@ Content-Type: application/json
 "password": "admin123"
 }
 
+### BOOK get, add, update, delete
+
 ###
 GET http://localhost:3000/api/book
 
@@ -29,7 +31,21 @@ GET http://localhost:3000/api/book
 ###
 POST http://localhost:3000/api/book
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ1NTA4OSwiZXhwIjoxNjY0NDY1ODg5fQ.6A7Izd8UVrH1m_rS4FLR2-fJi41dNjLfQU9YxZonBb4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
+
+{
+  "title": "Question from rest rest number 4",
+  "author": "Kestutis Kestis",
+  "publisher": "Briedis",
+  "publishing_date": "2012-11-25",
+  "genre": "IT",
+  "isbn": "100"
+}
+
+###
+PATCH http://localhost:3000/api/book/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
 
 {
   "title": "Question from rest rest",
@@ -37,6 +53,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhd
   "publisher": "Briedis",
   "publishing_date": "2015-08-05",
   "genre": "IT",
-  "isbn": "124"
+  "isbn": "114"
 }
+
+###
+DELETE http://localhost:3000/api/book/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2NDQ2Nzc4NywiZXhwIjoxNjY0NDc4NTg3fQ.4zDELB5KdXoZNGJuFNPcT21FkbiOOsWEJLVyEXv1Yig
 
