@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import BookPage from './pages/BookPage';
 import HomePage from './pages/HomePage';
@@ -29,6 +30,7 @@ function App() {
           <NotFoundPage />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }
